@@ -9,11 +9,6 @@ import { motion } from 'motion/react';
 import 'reveal.js/reveal.css';
 import 'reveal.js/theme/dracula.css';
 
-// ─── Static Assets ────────────────────────────────────────────────────────
-import bgTitle from '../../../public/images/nuclear_title_bg.png';
-import bgBanana from '../../../public/images/radioactive_banana.png';
-import bgCherenkov from '../../../public/images/cherenkov_radiation.png';
-
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 const ss = (obj: React.CSSProperties): React.CSSProperties => obj;
@@ -324,7 +319,7 @@ export default function Presentation() {
       >
 
         {/* ══ Slajd 1: Tytuł ══ */}
-        <Slide backgroundImage={bgTitle.src} backgroundOpacity={0.35} backgroundSize="cover">
+        <Slide backgroundImage="https://downloads.blokserwis.pl/users/aJSfLRsgZUQD7IJLIrWHApe3ngs2/nuclear_title_bg.png" backgroundOpacity={0.35} backgroundSize="cover">
           <FadeUp>
             <h1 style={ss({
               fontSize: '3.8rem', fontWeight: 900, color: '#67e8f9',
@@ -390,7 +385,7 @@ export default function Presentation() {
         </Slide>
 
         {/* ══ Slajd 3: Ciekawostka – Banan ══ */}
-        <Slide backgroundImage={bgBanana.src} backgroundOpacity={0.25} backgroundSize="cover">
+        <Slide backgroundImage="https://downloads.blokserwis.pl/users/aJSfLRsgZUQD7IJLIrWHApe3ngs2/radioactive_banana.png" backgroundOpacity={0.25} backgroundSize="cover">
           <FadeUp>
             <h2 style={ss({ fontSize: '2.5rem', fontWeight: 900, color: '#fbbf24', textAlign: 'left', textShadow: '0 2px 24px #000' })}>
               Naturalna radioaktywność człowieka
@@ -580,7 +575,7 @@ export default function Presentation() {
         </Slide>
 
         {/* ══ Slajd 9: Zastosowania + Czerenkow ══ */}
-        <Slide backgroundImage={bgCherenkov.src} backgroundOpacity={0.28} backgroundSize="cover">
+        <Slide backgroundImage="https://downloads.blokserwis.pl/users/aJSfLRsgZUQD7IJLIrWHApe3ngs2/cherenkov_radiation.png" backgroundOpacity={0.28} backgroundSize="cover">
           <FadeUp>
             <h2 style={ss({
               fontSize: '2.5rem', fontWeight: 900, color: '#67e8f9',
